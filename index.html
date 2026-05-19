@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmed Gubran cybersecurity portfolio: SOC operations, penetration testing, certifications, awards, projects, reports, and interactive terminal." />
+  <title>Ahmed Gubran | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="boot-screen" id="bootScreen">
+    <div class="boot-card">
+      <p class="mono muted">secure boot // portfolio interface</p>
+      <h1>Loading Cyber Profile</h1>
+      <div class="boot-progress"><span id="bootProgress"></span></div>
+      <pre id="bootLog">[+] loading certifications
+[+] indexing projects
+[+] starting cyberbot
+[+] mounting command terminal</pre>
+    </div>
+  </div>
+
+  <canvas id="codeRain" aria-hidden="true"></canvas>
+  <canvas id="cursorTrail" aria-hidden="true"></canvas>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <aside class="rail rail-pro" aria-label="Portfolio navigation">
+    <a href="#home" class="rail-logo" title="Home"><span class="rail-icon">AG</span><small>Home</small></a>
+    <a href="#about" title="About"><b>01</b><span class="rail-icon">👤</span><small>About</small></a>
+    <button id="railTerminal" class="rail-action" type="button" title="Open terminal"><b>02</b><span class="rail-icon">⌨</span><small>Terminal</small></button>
+    <a href="#certifications" title="Credentials"><b>03</b><span class="rail-icon">🏅</span><small>Certs</small></a>
+    <a href="#projects" title="Projects"><b>04</b><span class="rail-icon">🧪</span><small>Projects</small></a>
+    <a href="#writeups" title="Write-ups"><b>05</b><span class="rail-icon">📂</span><small>Notes</small></a>
+    <a href="#awards" title="Awards"><b>06</b><span class="rail-icon">🏆</span><small>Awards</small></a>
+    <a href="#contact" title="Contact"><b>07</b><span class="rail-icon">✉</span><small>Contact</small></a>
+    <button id="railBot" class="rail-action" type="button" title="Open CyberBot"><b>08</b><span class="rail-icon">🤖</span><small>Bot</small></button>
+    <button id="railSettings" class="rail-action" type="button" title="Toggle settings"><b>09</b><span class="rail-icon">⚙</span><small>Setup</small></button>
+    <button id="railVisitor" class="rail-action rail-visitor" type="button" title="Visitor counter"><b>10</b><span class="rail-icon">◉</span><small id="railVisitorCount">0</small></button>
+    <span id="railClock">00:00</span>
+  </aside>
+
+  <header class="topbar">
+    <a href="#home" class="brand"><span>root@ahmed</span><strong>~/cyber-portfolio</strong></a>
+    <button id="menuButton" class="menu-button" aria-label="Toggle navigation">☰</button>
+    <nav id="mainMenu" aria-label="Primary navigation">
+      <a href="#about"><span class="nav-ico">👤</span><span>About</span></a>
+      <button id="topTerminal" class="nav-action-inline" type="button"><span class="nav-ico">⌨</span><span>Terminal</span></button>
+      <a href="#certifications"><span class="nav-ico">🏅</span><span>Credentials</span></a>
+      <a href="#projects"><span class="nav-ico">🧪</span><span>Projects</span></a>
+      <a href="#writeups"><span class="nav-ico">📂</span><span>Notes</span></a>
+      <a href="#awards"><span class="nav-ico">🏆</span><span>Awards</span></a>
+      <a href="#contact"><span class="nav-ico">✉</span><span>Contact</span></a>
+    </nav>
+    <div class="topbar-actions" aria-label="Quick actions">
+      <button id="topBot" class="nav-tool-button" type="button" title="Open CyberBot"><span>🤖</span><small>Bot</small></button>
+      <button id="topSettings" class="nav-tool-button" type="button" title="Open settings"><span>⚙</span><small>Settings</small></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="hero-kicker"><span class="online-dot"></span><span id="profileKicker"></span></div>
+        <h1 id="profileName" class="glitch" data-text="Ahmed Gubran">Ahmed Gubran</h1>
+        <h2 id="profileTitle"></h2>
+        <p id="profileSubtitle" class="lead"></p>
+        <div class="tag-row" id="heroTags"></div>
+        <div class="hero-actions">
+          <button class="btn primary magnetic" id="openTerminalHero" type="button">Launch Terminal</button>
+          <a class="btn ghost magnetic" href="#certifications">View Credentials</a>
+          <a class="btn ghost magnetic" id="downloadCvHero" href="assets/cv/Ahmed_Gubran_Resume.pdf" download>Download CV</a>
+          <button class="btn ghost magnetic" id="openBotHero" type="button">Ask CyberBot</button>
+        </div>
+        <div class="signal-card reveal delay-1">
+          <span class="signal-pulse"></span>
+          <p id="profileStatus"></p>
+        </div>
+        <div class="visitor-strip reveal delay-2" id="visitorStrip" aria-label="Portfolio counters"></div>
+      </div>
+      <div class="hero-visual reveal delay-2">
+        <div class="identity-card glass tilt-card">
+          <div class="avatar-ring"><img id="profileAvatar" src="assets/profile/avatar.svg" alt="Ahmed Gubran avatar" /></div>
+          <div class="identity-info">
+            <small>IDENTITY</small>
+            <strong>Cybersecurity Graduate</strong>
+            <span>Offensive + Defensive Security</span>
+          </div>
+          <div class="identity-pills" id="identityPills"></div>
+        </div>
+        <div class="mission-card glass tilt-card">
+          <div class="mission-head"><span>ACTIVE SIGNAL</span><b>Top 5 THM · eJPT · SOC</b></div>
+          <h3>Security Portfolio Command Center</h3>
+          <p>Focused on SOC operations, penetration testing fundamentals, web security, vulnerability reporting, and practical lab documentation.</p>
+          <div class="mission-grid">
+            <span>Recon</span><span>SIEM</span><span>Reports</span><span>CTF</span>
+          </div>
+        </div>
+        <div class="hero-terminal glass tilt-card">
+          <div class="terminal-head"><span></span><span></span><span></span><b>profile.sh</b></div>
+          <pre id="heroTerminalText"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-modules reveal" id="quickModules"></section>
+
+    <section class="section about-grid" id="about">
+      <div class="section-title reveal">
+        <span class="mono accent">whoami</span>
+        <h2>About <em>Ahmed</em></h2>
+        <p id="aboutText"></p>
+      </div>
+      <div class="stats-panel glass reveal delay-1" id="statsPanel"></div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-title reveal">
+        <span class="mono accent">toolkit</span>
+        <h2>Security <em>Skills</em></h2>
+      </div>
+      <div class="card-grid" id="skillsGrid"></div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-title reveal">
+        <span class="mono accent">field practice</span>
+        <h2>Experience <em>Timeline</em></h2>
+      </div>
+      <div class="timeline" id="experienceTimeline"></div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="section-title reveal row-title">
+        <div>
+          <span class="mono accent">proof of learning</span>
+          <h2>Professional <em>Credentials</em></h2>
+          <p>Selected credentials and achievements presented as visual proof of learning, practice, and academic progress. Click any card to preview details.</p>
+        </div>
+        <div class="filter-row" id="certFilters"></div>
+      </div>
+      <div class="certificate-grid" id="certificationGrid"></div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-title reveal">
+        <span class="mono accent">build / secure / document</span>
+        <h2>Security <em>Projects</em></h2>
+      </div>
+      <div class="project-stack" id="projectStack"></div>
+    </section>
+
+    <section class="section" id="awards">
+      <div class="section-title reveal row-title">
+        <div>
+          <span class="mono accent">academic & competitions</span>
+          <h2>Awards, Hackathons & <em>University Achievements</em></h2>
+          <p>Dean’s Awards, CTF participation, hackathon participation, and academic mobility results.</p>
+        </div>
+        <div class="filter-row" id="awardFilters"></div>
+      </div>
+      <div class="certificate-grid" id="awardGrid"></div>
+    </section>
+
+
+    <section class="section latest-writeups" id="writeups">
+      <div class="section-title reveal row-title">
+        <div>
+          <span class="mono accent">kali library</span>
+          <h2>Latest <em>Write-ups</em></h2>
+          <p>A Kali-inspired cybersecurity notebook for structured study notes, lab reports, tool references, exam preparation, and practical security reflections.</p>
+        </div>
+        <button class="btn primary magnetic" id="openWriteupWindow" type="button">Open File Manager</button>
+      </div>
+      <div class="file-manager-preview glass reveal delay-1" id="writeupPreview"></div>
+    </section>
+
+    <section class="section" id="reports">
+      <div class="section-title reveal">
+        <span class="mono accent">formal security evidence</span>
+        <h2>Security <em>Report</em></h2>
+        <p>A focused section for formal vulnerability research and authorized security documentation. Notes and articles stay in the Kali notebook above.</p>
+      </div>
+      <div class="card-grid reports-grid" id="reportsGrid"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-title reveal">
+        <span class="mono accent">connect</span>
+        <h2>Contact <em>Ahmed</em></h2>
+        <p>Available for cybersecurity opportunities, SOC roles, internships, and penetration-testing related projects.</p>
+      </div>
+      <div class="contact-grid reveal delay-1">
+        <div class="contact-card glass tilt-card">
+          <h3>Professional Links</h3>
+          <div id="contactLinks"></div>
+        </div>
+        <div class="contact-card glass tilt-card">
+          <h3>CyberBot Assistant</h3>
+          <p>Ask about cybersecurity concepts, Linux commands, pentesting tools, SOC workflows, eJPT, Security+, or Ahmed’s CGPA, certificates, projects, awards, reports, CV, and links.</p>
+          <button class="btn primary magnetic" id="openBotContact" type="button">Open CyberBot</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <nav class="social-dock glass" id="socialDock" aria-label="Quick social links"></nav>
+  <button id="terminalFab" class="terminal-fab magnetic" type="button" aria-label="Open command terminal">⌨</button>
+  <div class="terminal-backdrop" id="terminalBackdrop" aria-hidden="true"></div>
+  <section class="terminal-drawer glass" id="terminalDrawer" aria-label="Portfolio command terminal" aria-hidden="true">
+    <div class="terminal-drawer-head">
+      <div>
+        <span class="mono accent">ahmed@portfolio</span>
+        <strong>Command Terminal</strong>
+      </div>
+      <div class="terminal-drawer-actions">
+        <button id="terminalMinimize" type="button" title="Minimize terminal">—</button>
+        <button id="terminalClose" type="button" aria-label="Close terminal">×</button>
+      </div>
+    </div>
+    <div class="terminal-drawer-hint">
+      Try <code>help</code>, <code>whoami</code>, <code>cgpa</code>, <code>open projects</code>, <code>open tryhackme</code>, or <code>ask cyberbot</code>.
+    </div>
+    <div class="shell-output" id="shellOutput"></div>
+    <form class="shell-input drawer-shell-input" id="shellForm">
+      <label for="shellCommand">ahmed@portfolio:~$</label>
+      <input id="shellCommand" type="text" autocomplete="off" placeholder="type a command, e.g. help" />
+    </form>
+  </section>
+
+  <button id="settingsFab" class="settings-fab magnetic" aria-label="Open settings">⚙</button>
+  <section class="settings-panel glass" id="settingsPanel" aria-label="Portfolio interface settings">
+    <div class="settings-head">
+      <div><strong>Settings</strong><small>Customize the interface</small></div>
+      <button id="closeSettings" type="button" aria-label="Close settings">×</button>
+    </div>
+    <div class="settings-group">
+      <h4>LANGUAGE</h4>
+      <div class="settings-options" data-setting="language">
+        <button data-value="en">English</button>
+        <button data-value="ar">العربية</button>
+      </div>
+    </div>
+    <div class="settings-group">
+      <h4>COLOR PALETTE</h4>
+      <div class="settings-options palette-options" data-setting="palette">
+        <button data-value="critical-red"><span class="swatch red"></span>CRITICAL RED</button>
+        <button data-value="tactical-cyan"><span class="swatch cyan"></span>TACTICAL CYAN</button>
+        <button data-value="phantom-purple"><span class="swatch purple"></span>PHANTOM PURPLE</button>
+        <button data-value="secure-emerald"><span class="swatch emerald"></span>SECURE EMERALD</button>
+      </div>
+    </div>
+    <div class="settings-group">
+      <h4>READABILITY</h4>
+      <div class="settings-options" data-setting="readability">
+        <button data-value="small">Small</button>
+        <button data-value="medium">Medium</button>
+        <button data-value="large">Large</button>
+      </div>
+    </div>
+    <div class="settings-group">
+      <h4>FONT STYLE</h4>
+      <div class="settings-options font-options" data-setting="font">
+        <button data-value="modern">◆ Modern</button>
+        <button data-value="decorative">◇ Decorative / Style</button>
+        <button data-value="handicraft">عام الحِرف</button>
+        <button data-value="almarai">Aa أب Almarai</button>
+      </div>
+    </div>
+    <div class="settings-group">
+      <h4>INTERFACE MODE</h4>
+      <div class="settings-options" data-setting="mode">
+        <button data-value="dark">🌙 Dark</button>
+        <button data-value="light">☀️ Light</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="writeup-window glass" id="writeupWindow" aria-label="Kali style write-up file manager">
+    <div class="file-window-top">
+      <div class="window-title"><span></span><span></span><span></span><strong>File Manager</strong></div>
+      <div class="file-search"><span>⌕</span><input id="writeupSearch" type="text" placeholder="Search write-ups..." autocomplete="off"><kbd>CTRL+K</kbd></div>
+      <button id="closeWriteupWindow" type="button" aria-label="Close writeup window">×</button>
+    </div>
+    <div class="file-window-body">
+      <aside class="file-sidebar" id="writeupSidebar"></aside>
+      <main class="file-content">
+        <div class="breadcrumb"><span>←</span><b id="writeupPath">root</b></div>
+        <div class="folder-grid" id="writeupFolderGrid"></div>
+        <div class="file-grid" id="writeupFileGrid"></div>
+      </main>
+    </div>
+  </section>
+
+
+  <section class="article-reader glass" id="articleReader" aria-label="Interactive write-up reader" aria-hidden="true">
+    <div class="reader-topbar">
+      <div class="reader-title-block">
+        <small id="readerMeta">NOTEBOOK</small>
+        <h3 id="readerTitle">Write-up Reader</h3>
+      </div>
+      <div class="reader-actions">
+        <button id="readerZen" type="button">Focus mode</button>
+        <button id="readerPrint" type="button">Print / Save PDF</button>
+        <button id="closeArticleReader" type="button" aria-label="Close article reader">×</button>
+      </div>
+    </div>
+    <div class="reader-progress"><span id="readerProgress"></span></div>
+    <div class="reader-layout">
+      <aside class="reader-toc" id="readerToc"></aside>
+      <article class="reader-content" id="readerContent"></article>
+    </div>
+  </section>
+
+  <button id="chatFab" class="chat-fab bot-drawer-fab magnetic" aria-label="Open CyberBot">🤖</button>
+  <div class="bot-backdrop" id="botBackdrop" aria-hidden="true"></div>
+  <section class="cyberbot cyberbot-drawer glass" id="cyberbot" aria-label="CyberBot portfolio assistant" aria-hidden="true">
+    <div class="bot-head bot-drawer-head">
+      <div>
+        <span class="mono accent">cyberbot@portfolio</span>
+        <strong>CyberBot Command Center</strong>
+        <small>Cybersecurity assistant · tools · exams · Ahmed profile</small>
+      </div>
+      <div class="bot-drawer-actions">
+        <button id="botReset" type="button" title="Reset conversation">↺</button>
+        <button id="botMinimize" type="button" title="Minimize CyberBot">—</button>
+        <button id="closeBot" class="bot-close" type="button" aria-label="Close chatbot">×</button>
+      </div>
+    </div>
+    <div class="bot-command-strip">
+      <button type="button" data-bot-command="/help">/help</button>
+      <button type="button" data-bot-command="/profile">/profile</button>
+      <button type="button" data-bot-command="/tools">/tools</button>
+      <button type="button" data-bot-command="/ejpt">/ejpt</button>
+      <button type="button" data-bot-command="/soc">/soc</button>
+    </div>
+    <div class="bot-search-row">
+      <span>⌕</span>
+      <input id="botSearch" type="text" autocomplete="off" placeholder="Search: nmap, IDOR, Security+, CGPA, SOC triage..." />
+      <kbd>ENTER</kbd>
+    </div>
+    <div class="bot-search-results" id="botSearchResults"></div>
+    <div class="bot-messages" id="botMessages"></div>
+    <div class="bot-suggestions" id="botSuggestions"></div>
+    <form class="bot-form" id="botForm">
+      <input id="botInput" type="text" autocomplete="off" placeholder="Ask any cyber question or ask about Ahmed..." />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div class="modal" id="assetModal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Close preview">×</button>
+    <div class="modal-card">
+      <img id="modalImage" src="" alt="Certificate preview" />
+      <div class="modal-info"><h3 id="modalTitle"></h3><p id="modalMeta"></p><a id="modalDoc" href="#" target="_blank" rel="noreferrer">Open full credential ↗</a></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-brand-row">
+      <div>
+        <strong>Ahmed Gubran</strong>
+        <span>Cybersecurity Portfolio · amd11o</span>
+      </div>
+      <div class="footer-social-icons" id="footerSocialIcons"></div>
+    </div>
+    <div class="footer-links" id="footerLinks"></div>
+    <p>© <span id="year"></span> Ahmed Gubran. Built for ethical learning, authorized labs, and professional presentation.</p>
+  </footer>
+
+  <script src="data/portfolio-data.js"></script>
+  <script src="data/article-content.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
