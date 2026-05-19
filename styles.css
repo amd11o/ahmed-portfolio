@@ -2842,3 +2842,93 @@ button {
   .topbar nav#mainMenu a,
   .topbar nav#mainMenu .nav-action-inline { justify-content: flex-start !important; width: 100% !important; }
 }
+
+/* =========================================================
+   LEFT SIDEBAR AUTO-HIDE FIX
+   Keeps the left rail hidden so it does not cover content.
+   It expands only when the mouse gets close to it.
+========================================================= */
+
+.side-nav {
+  position: fixed;
+  left: 12px;
+  top: 50%;
+  transform: translate(-78%, -50%);
+  width: 72px;
+  max-height: 82vh;
+  padding: 10px 6px;
+  opacity: 0.28;
+  z-index: 60;
+  transition:
+    transform 0.28s ease,
+    opacity 0.28s ease,
+    width 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+/* small hover area */
+.side-nav::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 0;
+  width: 42px;
+  height: 100%;
+}
+
+/* show sidebar when mouse comes near */
+.side-nav:hover,
+.side-nav:focus-within {
+  transform: translate(0, -50%);
+  opacity: 1;
+  width: 86px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45),
+              0 0 30px rgba(255, 255, 255, 0.08);
+}
+
+/* keep icons/numbers aligned */
+.side-nav a,
+.side-nav button,
+.side-nav .nav-item {
+  width: 52px;
+  height: 52px;
+  margin: 4px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border-radius: 16px;
+  position: relative;
+}
+
+/* hide labels if any */
+.side-nav .label,
+.side-nav .nav-label {
+  display: none;
+}
+
+/* make number badge clean */
+.side-nav .nav-number,
+.side-nav .number,
+.side-nav small {
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* do not show sidebar on small screens */
+@media (max-width: 900px) {
+  .side-nav {
+    display: none !important;
+  }
+}
