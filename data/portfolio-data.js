@@ -215,15 +215,17 @@ const portfolioData = {
   ],
 
   projects: [
-    {
-      title: "Afwaj Al Haramain Travel Website",
-      period: "Aug 2025 - Jan 2026",
-      category: "Secure Web Application",
-      desc: "Developed and maintained a secure travel booking website with input validation, parameterized queries to reduce SQL injection risk, improved authorization checks for IDOR-related issues, and customer data protection practices.",
-      image: "assets/projects/secure-travel-website.svg",
-      tags: ["Web Security", "SQL Injection Mitigation", "IDOR", "Access Control", "Secure Coding"],
-      links: [ { label: "GitHub", url: "https://github.com/amd11o" }, { label: "Case Study", url: "assets/writeups/secure-web-app-case-study.md" } ]
-    },
+   {
+  title: "Afwaj Al Haramain Web Application Security Assessment",
+  period: "Jan 2026 - Jun 2026",
+  category: "Web Application Security Audit",
+  desc: "Conducted web application security assessment, vulnerability assessment, and threat modeling for the company's business platform. Reviewed security controls related to client database architecture, secure payment gateway integration, discount management workflows, access control, input validation, and secure coding practices. Prepared a security assessment report with prioritized findings, business impact, and remediation recommendations.",
+  image: "assets/projects/secure-travel-website.svg",
+  tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Input Validation", "Secure Coding", "Security Reporting"],
+  links: [
+    { label: "Case Study", url: "assets/writeups/secure-web-app-case-study.md" }
+  ]
+},
     {
       title: "Phishing URL Detection System Using XGBoost",
       period: "May 2024 - Feb 2025",
