@@ -34,7 +34,7 @@ const portfolioData = {
     { value: "12+", label: "Credentials & Certificates" },
     { value: "Top 5", label: "TryHackMe Ranking" },
     { value: "4+", label: "Security Projects" },
-    { value: "2", label: "Cyber/IT Internships" },
+    { value: "2", label: "Cybersecurity Roles" },
     { value: "3+", label: "Dean’s Awards Shown" }
   ],
 
@@ -50,18 +50,18 @@ const portfolioData = {
 
   experience: [
     {
-      role: "Cybersecurity Consultant & Web Application Security Auditor",
-      company: "Afwaj Al Haramain Travel & Tours, Cyberjaya, Malaysia",
+      role: "Cyber Security Consultant & Web Auditor",
+      company: "Afwaj Al Haramain Travel & Tours, Cyberjaya, Selangor, Malaysia · Hybrid",
       period: "Jan 2026 - Jun 2026",
-      desc: "Conducted web application security assessment, vulnerability assessment, and threat modeling for the company's business platform. Reviewed security controls related to client database architecture, secure payment gateway integration, discount management workflows, access control, input validation, and secure coding practices. Prepared and presented a security assessment report with prioritized findings, business impact, and remediation recommendations.",
-      tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Secure Coding", "Security Reporting"]
+      desc: "Conducted comprehensive vulnerability assessment, threat modeling, and web application security evaluation for the company’s business platform to improve data protection, system reliability, and overall security posture. Reviewed security requirements for client database architecture, secure payment gateway integrations, discount management systems, access control, input validation, and secure coding practices. Prepared and presented a detailed security assessment report with prioritized findings, business impact, and a strategic remediation roadmap.",
+      tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Input Validation", "Secure Coding", "Security Reporting"]
     },
     {
       role: "Cybersecurity Intern - SOC Team",
-      company: "Cybertronium, Kuala Lumpur, Malaysia",
+      company: "Cybertronium, Mid Valley City, Kuala Lumpur, Malaysia · On-site",
       period: "Aug 2025 - Jan 2026",
-      desc: "Worked within the Security Operations Center (SOC) team to monitor, analyze, and investigate enterprise security events and alerts. Performed real-time log analysis, SIEM monitoring, alert triage, incident investigation, and escalation using Splunk and Microsoft Sentinel. Monitored endpoint security events using CrowdStrike and Microsoft Defender while supporting SOC operations, incident response workflows, and security documentation.",
-      tags: ["SOC", "SIEM", "Log Analysis", "Alert Triage", "Incident Investigation", "Threat Detection", "Splunk", "Microsoft Sentinel", "CrowdStrike"]
+      desc: "Worked within the Security Operations Center (SOC) team to monitor, analyze, and respond to enterprise security events and alerts. Performed real-time log analysis, SIEM monitoring, alert triage, incident investigation, and escalation using Splunk and Microsoft Sentinel. Monitored endpoint security events through EDR/XDR solutions including CrowdStrike and Microsoft Defender, while supporting shift-based SOC operations, incident response workflows, vulnerability reporting, and security documentation.",
+      tags: ["SOC", "SIEM", "Log Analysis", "Alert Triage", "Incident Investigation", "Threat Detection", "Splunk", "Microsoft Sentinel", "CrowdStrike", "Microsoft Defender"]
     }
   ],
 
@@ -216,16 +216,16 @@ const portfolioData = {
 
   projects: [
    {
-  title: "Afwaj Al Haramain Web Application Security Assessment",
-  period: "Jan 2026 - Jun 2026",
-  category: "Web Application Security Audit",
-  desc: "Conducted web application security assessment, vulnerability assessment, and threat modeling for the company's business platform. Reviewed security controls related to client database architecture, secure payment gateway integration, discount management workflows, access control, input validation, and secure coding practices. Prepared a security assessment report with prioritized findings, business impact, and remediation recommendations.",
-  image: "assets/projects/secure-travel-website.svg",
-  tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Input Validation", "Secure Coding", "Security Reporting"],
-  links: [
-    { label: "Case Study", url: "assets/writeups/secure-web-app-case-study.md" }
-  ]
-},
+      title: "Afwaj Al Haramain Web Application Security Assessment",
+      period: "Jan 2026 - Jun 2026",
+      category: "Web Application Security Audit",
+      desc: "Conducted vulnerability assessment, threat modeling, and web application security evaluation for the company’s business platform. Reviewed security controls related to client database architecture, secure payment gateway integration, discount management workflows, access control, input validation, and secure coding practices. Prepared a security assessment report with prioritized findings, business impact, and remediation recommendations.",
+      image: "assets/projects/secure-travel-website.svg",
+      tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Input Validation", "Secure Coding", "Security Reporting"],
+      links: [
+        { label: "Case Study", url: "assets/writeups/secure-web-app-case-study.md" }
+      ]
+    },
     {
       title: "Phishing URL Detection System Using XGBoost",
       period: "May 2024 - Feb 2025",
@@ -415,9 +415,9 @@ const portfolioData = {
     },
     {
       topic: "Ahmed experience",
-      keywords: ["experience", "intern", "soc analyst", "afwaj", "uthm soc", "work", "خبرة", "تدريب"],
-      answer: "Ahmed’s experience includes a SOC Analyst Internship at University SOC, UTHM, where he worked with alert review, log analysis, suspicious activity identification, severity assessment, and escalation support. He also completed a Cybersecurity & IT Internship / IT Support role at Afwaj Al Haramain, focusing on secure web practices, SQL injection mitigation using parameterized queries, IDOR-related authorization checks, Windows/Linux support, and operational security improvements.",
-      answerAr: "خبرة أحمد تشمل تدريب SOC Analyst في University SOC بجامعة UTHM، حيث عمل على مراجعة التنبيهات، تحليل اللوقات، تحديد الأنشطة المشبوهة، تقييم الخطورة، ودعم التصعيد. كما لديه تدريب Cybersecurity & IT Intern / IT Support في Afwaj Al Haramain مع تركيز على ممارسات الويب الآمنة، تقليل SQL Injection باستخدام Parameterized Queries، تحسين Authorization لمشاكل IDOR، ودعم Windows/Linux."
+      keywords: ["experience", "intern", "soc analyst", "cybersecurity consultant", "web auditor", "afwaj", "cybertronium", "soc team", "work", "خبرة", "تدريب"],
+      answer: "Ahmed’s experience includes a Cyber Security Consultant & Web Auditor role at Afwaj Al Haramain Travel & Tours from Jan 2026 to Jun 2026, where he conducted vulnerability assessment, threat modeling, web application security evaluation, secure payment gateway review, database security requirements review, input validation review, secure coding practices, and security reporting. He also completed a Cybersecurity Intern - SOC Team role at Cybertronium from Aug 2025 to Jan 2026, where he supported SOC monitoring, SIEM monitoring, log analysis, alert triage, incident investigation, endpoint monitoring, and incident response workflows using tools such as Splunk, Microsoft Sentinel, CrowdStrike, and Microsoft Defender.",
+      answerAr: "خبرة أحمد تشمل دور Cyber Security Consultant & Web Auditor في Afwaj Al Haramain Travel & Tours من يناير 2026 إلى يونيو 2026، حيث عمل على تقييم الثغرات، Threat Modeling، تقييم أمن تطبيقات الويب، مراجعة بوابات الدفع الآمنة، مراجعة متطلبات أمان قاعدة البيانات، Input Validation، Secure Coding، وإعداد التقارير الأمنية. كما أكمل تدريب Cybersecurity Intern - SOC Team في Cybertronium من أغسطس 2025 إلى يناير 2026، حيث دعم مراقبة SOC، مراقبة SIEM، تحليل اللوقات، Alert Triage، التحقيق في الحوادث، مراقبة Endpoint، وسير عمل الاستجابة للحوادث باستخدام أدوات مثل Splunk وMicrosoft Sentinel وCrowdStrike وMicrosoft Defender."
     }
   ],
 
