@@ -1,10 +1,10 @@
 const portfolioData = {
   profile: {
     name: "Ahmed Gubran",
-    kicker: "SOC Analyst • Penetration Testing • Incident Response",
-    title: "Cybersecurity Graduate | SOC Analyst | Penetration Testing & SIEM Operations",
-    subtitle: "Cybersecurity graduate with practical exposure to SOC monitoring, alert triage, incident investigation, vulnerability assessment, secure web practices, and penetration-testing fundamentals.",
-    status: "Available for cybersecurity opportunities, SOC roles, internships, and authorized pentesting-related projects.",
+    kicker: "SOC Analyst • Web Security • Penetration Testing",
+    title: "Cybersecurity Analyst | SOC Analyst | Junior Penetration Tester | Web Application Security",
+    subtitle: "Cybersecurity professional with hands-on experience in SOC operations, SIEM monitoring, threat detection, vulnerability assessment, web application security auditing, and authorized penetration testing practice.",
+    status: "Available for SOC Analyst, Cybersecurity Analyst, Web Security, and Junior Penetration Tester opportunities.",
     email: "ahmed.a2gubran@gmail.com",
     linkedin: "https://www.linkedin.com/in/amd11o",
     github: "https://github.com/amd11o",
@@ -15,27 +15,27 @@ const portfolioData = {
     handle: "@amd11o",
     cv: "assets/cv/Ahmed_Gubran_Resume.pdf",
     avatar: "assets/profile/ahmed-cyber-workspace.jpg",
-    about: "Ahmed is a cybersecurity graduate with a Bachelor of Computer Science in Information Security from UTHM. His work combines defensive security experience in SOC operations with offensive security learning through penetration testing, web security, vulnerability assessment, CTF participation, and security-focused projects. Academic highlights include a UTHM CGPA of 3.55, Brawijaya academic mobility GPA/cGPA of 4.00, and multiple Dean’s Awards. This portfolio is designed as a professional evidence hub for certifications, awards, reports, write-ups, projects, and practical security learning."
+    about: "Ahmed is a cybersecurity professional with a Bachelor of Computer Science in Information Security from UTHM. His work combines SOC operations, SIEM monitoring, incident investigation, vulnerability assessment, web application security auditing, security reporting, and penetration testing practice. Academic highlights include a UTHM CGPA of 3.55, Brawijaya academic mobility GPA/cGPA of 4.00, and multiple Dean’s Awards. This portfolio presents selected certifications, reports, write-ups, projects, and professional security experience."
   },
 
-  heroTags: ["SOC Operations", "Penetration Testing", "Web Security", "SIEM", "Incident Response", "Vulnerability Assessment", "eJPT", "TryHackMe Top 5", "CTF"],
-  identityPills: ["eJPT", "Security+", "HCIA", "CCNA", "AI-900", "TryHackMe Top 5", "Dean's Award"],
+  heroTags: ["SOC Analyst", "Web Security", "Penetration Testing", "SIEM", "Vulnerability Assessment"],
+  identityPills: ["eWPTX", "eJPTv2", "Security+", "TryHackMe", "Dean's Award"],
 
   quickModules: [
     { title: "Interactive Terminal", desc: "Navigate the portfolio using Linux-style commands such as ls, cat, open, whoami, neofetch, and settings.", target: "#terminal" },
-    { title: "Credentials", desc: "Professional certificates, TryHackMe Top 5 highlight, penetration testing learning, security fundamentals, networking, Huawei security, and Microsoft fundamentals.", target: "#certifications" },
-    { title: "Cyber Notebook", desc: "An interactive Kali-style notebook for rendered notes, lab reports, tools, project write-ups, exam prep, and security methodology.", target: "#writeups" },
-    { title: "Awards", desc: "Dean’s Awards, academic mobility achievement, CTF participation, and hackathon participation.", target: "#awards" }
+    { title: "Credentials", desc: "Professional certificates, security fundamentals, penetration testing credentials, networking, Huawei security, and Microsoft fundamentals.", target: "#certifications" },
+    { title: "Cyber Notebook", desc: "An interactive notebook for reports, write-ups, lab notes, tools, exam prep, and security methodology.", target: "#writeups" },
+    { title: "Awards", desc: "Dean’s Awards, academic mobility achievement, CTF, and hackathon participation.", target: "#awards" }
   ],
 
   stats: [
     { value: "3.55", label: "UTHM CGPA" },
     { value: "4.00", label: "Brawijaya GPA" },
-    { value: "12+", label: "Credentials & Certificates" },
-    { value: "Top 5", label: "TryHackMe Ranking" },
-    { value: "4+", label: "Security Projects" },
+    { value: "8+", label: "Certifications" },
+    { value: "Top 5", label: "TryHackMe" },
+    { value: "4", label: "Security Projects" },
     { value: "2", label: "Cybersecurity Roles" },
-    { value: "3+", label: "Dean’s Awards Shown" }
+    { value: "3+", label: "Dean’s Awards" }
   ],
 
   skills: [
@@ -54,20 +54,31 @@ const portfolioData = {
       company: "Afwaj Al Haramain Travel & Tours, Cyberjaya, Selangor, Malaysia · Hybrid",
       period: "Jan 2026 - Jun 2026",
       desc: "Conducted comprehensive vulnerability assessment, threat modeling, and web application security evaluation for the company’s business platform to improve data protection, system reliability, and overall security posture. Reviewed security requirements for client database architecture, secure payment gateway integrations, discount management systems, access control, input validation, and secure coding practices. Prepared and presented a detailed security assessment report with prioritized findings, business impact, and a strategic remediation roadmap.",
-      tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Input Validation", "Secure Coding", "Security Reporting"]
+      tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Secure Coding", "Security Reporting"]
     },
     {
       role: "Cybersecurity Intern - SOC Team",
       company: "Cybertronium, Mid Valley City, Kuala Lumpur, Malaysia · On-site",
       period: "Aug 2025 - Jan 2026",
       desc: "Worked within the Security Operations Center (SOC) team to monitor, analyze, and respond to enterprise security events and alerts. Performed real-time log analysis, SIEM monitoring, alert triage, incident investigation, and escalation using Splunk and Microsoft Sentinel. Monitored endpoint security events through EDR/XDR solutions including CrowdStrike and Microsoft Defender, while supporting shift-based SOC operations, incident response workflows, vulnerability reporting, and security documentation.",
-      tags: ["SOC", "SIEM", "Log Analysis", "Alert Triage", "Incident Investigation", "Threat Detection", "Splunk", "Microsoft Sentinel", "CrowdStrike", "Microsoft Defender"]
+      tags: ["SOC", "SIEM", "Log Analysis", "Alert Triage", "Incident Investigation", "Splunk", "Microsoft Sentinel", "CrowdStrike", "Microsoft Defender"]
     }
   ],
 
   certifications: [
     {
-      title: "eLearnSecurity Junior Penetration Tester (eJPT)",
+      title: "eWPTX - Web Application Penetration Tester eXtreme",
+      issuer: "INE Security",
+      date: "June 2026",
+      type: "Advanced Web Application Security",
+      category: "Offensive",
+      badge: "⚔️",
+      desc: "Advanced web application penetration testing certification focused on web security methodology, exploitation techniques, vulnerability validation, and professional reporting.",
+      image: "assets/certificates/ewptx-certificate.png",
+      doc: "assets/certificates/ewptx-certificate.png"
+    },
+    {
+      title: "eJPTv2 - Junior Penetration Tester",
       issuer: "INE Security",
       date: "May 18, 2026",
       type: "Offensive Security",
@@ -215,15 +226,38 @@ const portfolioData = {
   ],
 
   projects: [
-   {
+    {
       title: "Afwaj Al Haramain Web Application Security Assessment",
       period: "Jan 2026 - Jun 2026",
       category: "Web Application Security Audit",
       desc: "Conducted vulnerability assessment, threat modeling, and web application security evaluation for the company’s business platform. Reviewed security controls related to client database architecture, secure payment gateway integration, discount management workflows, access control, input validation, and secure coding practices. Prepared a security assessment report with prioritized findings, business impact, and remediation recommendations.",
       image: "assets/projects/secure-travel-website.svg",
-      tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Input Validation", "Secure Coding", "Security Reporting"],
+      tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Input Validation", "Security Reporting"],
       links: [
         { label: "Case Study", url: "assets/writeups/secure-web-app-case-study.md" }
+      ]
+    },
+    {
+      title: "Authorized UTHM Student Platform Security Assessment",
+      period: "Jan 2026 - Mar 2026",
+      category: "Authorized Web Security Assessment",
+      desc: "Conducted an authorized security assessment for a university student platform focused on OWASP Top 10 risks, authentication, access control, input validation, session management, and data protection. Performed reconnaissance, manual testing, vulnerability assessment, and security verification using Burp Suite, Nmap, Kali Linux, and browser developer tools. Prepared vulnerability reports with evidence, risk impact, severity rating, and remediation recommendations.",
+      image: "assets/projects/soc-operations.svg",
+      tags: ["OWASP Top 10", "Access Control", "Burp Suite", "Nmap", "Kali Linux", "Reporting"],
+      links: [
+        { label: "Redacted Report", url: "assets/reports/Vulnerability_Report_SMAP_Ahmed_Gubran.pdf" },
+        { label: "Open Notebook", url: "#writeups" }
+      ]
+    },
+    {
+      title: "AI-Assisted Vulnerability Detection Tool",
+      period: "2026 - Present",
+      category: "Security Automation",
+      desc: "Building an AI-assisted security tool concept to support vulnerability detection, web security review, risk prioritization, and report generation. The project focuses on assisting authorized penetration testing workflows through structured analysis, evidence organization, and remediation guidance.",
+      image: "assets/projects/phishing-detection.svg",
+      tags: ["AI Security", "Automation", "Vulnerability Detection", "Risk Prioritization", "Reporting"],
+      links: [
+        { label: "GitHub", url: "https://github.com/amd11o" }
       ]
     },
     {
@@ -233,34 +267,10 @@ const portfolioData = {
       desc: "Developed a machine learning-based solution to detect phishing URLs using URL feature extraction, XGBoost classification, and malicious URL analysis to support early phishing detection.",
       image: "assets/projects/phishing-detection.svg",
       tags: ["Machine Learning", "XGBoost", "Phishing Detection", "Feature Extraction", "Cybersecurity"],
-      links: [ { label: "GitHub", url: "https://github.com/amd11o" }, { label: "Project Notes", url: "assets/writeups/phishing-url-detection-project.md" } ]
-    },
-    {
-      title: "Zero Trust Network Architecture Simulation",
-      period: "Jan 2022 - May 2022",
-      category: "Network Security Design",
-      desc: "Designed and simulated a Zero Trust network architecture in EVE-NG using segmentation, access control, and continuous monitoring concepts to reduce unauthorized access.",
-      image: "assets/projects/zero-trust.svg",
-      tags: ["Zero Trust", "EVE-NG", "Segmentation", "Access Control", "Monitoring"],
-      links: [ { label: "Architecture Notes", url: "assets/writeups/zero-trust-architecture-notes.md" } ]
-    },
-    {
-      title: "SMAP Online Files Repository Vulnerability Research",
-      period: "April 2026",
-      category: "Access Control / Vulnerability Research",
-      desc: "Prepared a professional vulnerability research report on repository-wide broken access control, IDOR-style object access risk, predictable PDF exposure, and remediation strategy for the SMAP Online Files Repository. The portfolio includes the SMAP report as uploaded, with separate notes for responsible disclosure, evidence handling, and remediation thinking.",
-      image: "assets/projects/soc-operations.svg",
-      tags: ["Broken Access Control", "IDOR", "Predictable References", "Remediation", "Responsible Testing", "Reporting"],
-      links: [ { label: "View Report", url: "assets/reports/Vulnerability_Report_SMAP_Ahmed_Gubran.pdf" }, { label: "Open Notebook", url: "#writeups" } ]
-    },
-    {
-      title: "SOC Operations Documentation Practice",
-      period: "2025 - 2026",
-      category: "Blue Team / Reporting",
-      desc: "A structured documentation area for alert triage notes, incident response workflows, security findings, and escalation support templates.",
-      image: "assets/projects/soc-operations.svg",
-      tags: ["SOC", "SIEM", "Alert Triage", "Incident Reports"],
-      links: [ { label: "Notes", url: "#writeups" } ]
+      links: [
+        { label: "GitHub", url: "https://github.com/amd11o" },
+        { label: "Project Notes", url: "assets/writeups/phishing-url-detection-project.md" }
+      ]
     }
   ],
 
@@ -275,15 +285,15 @@ const portfolioData = {
     files: [
       { title: "eJPT Exam Notes", folder: "ejpt", type: "Markdown", status: "Completed", date: "2026", icon: "⚔️", url: "assets/writeups/ejpt-exam-notes.md", desc: "My practical eJPT-style notes: methodology, commands, tools, pivoting mindset, exam-day workflow, and mistakes I avoid." },
       { title: "Security+ Study Tips", folder: "cybersecurity", type: "Markdown", status: "Completed", date: "2026", icon: "🛡️", url: "assets/writeups/security-plus-study-tips.md", desc: "How I think about Security+: concepts, practice strategy, question technique, and exam-day reminders." },
-      { title: "SMAP Vulnerability Research Report", folder: "cybersecurity", type: "PDF", status: "PDF", date: "April 2026", icon: "🔐", url: "assets/reports/Vulnerability_Report_SMAP_Ahmed_Gubran.pdf", desc: "SMAP Online Files Repository vulnerability research report prepared for academic/internal remediation and responsible documentation." },
-      { title: "SMAP Vulnerability Report Notes", folder: "cybersecurity", type: "Markdown", status: "Completed", date: "2026", icon: "📝", url: "assets/writeups/smap-vulnerability-report-notes.md", desc: "Short notes summarizing the report focus, impact, and remediation mindset for portfolio reading." },
+      { title: "UTHM Student Platform Security Assessment Report", folder: "cybersecurity", type: "PDF", status: "PDF", date: "April 2026", icon: "🔐", url: "assets/reports/Vulnerability_Report_SMAP_Ahmed_Gubran.pdf", desc: "Redacted university student platform security assessment report prepared for academic/internal remediation and responsible documentation." },
+      { title: "UTHM Security Assessment Notes", folder: "cybersecurity", type: "Markdown", status: "Completed", date: "2026", icon: "📝", url: "assets/writeups/smap-vulnerability-report-notes.md", desc: "Short notes summarizing the assessment focus, impact, and remediation mindset for portfolio reading." },
       { title: "Web Application Pentest Methodology", folder: "cybersecurity", type: "Markdown", status: "Completed", date: "2026", icon: "🌐", url: "assets/writeups/web-pentest-methodology.md", desc: "My web testing flow: mapping the app, auth, access control, injection, file features, evidence, and reporting." },
       { title: "Kali Linux Troubleshooting Playbook", folder: "kali", type: "Markdown", status: "Completed", date: "2026", icon: "🐉", url: "assets/writeups/kali-troubleshooting.md", desc: "Short practical fixes for VPN, routing, DNS, Burp proxy, Nmap speed, Metasploit DB, wordlists, and unstable shells." },
       { title: "SOC Alert Triage Notes", folder: "cybersecurity", type: "Markdown", status: "Completed", date: "2026", icon: "📡", url: "assets/writeups/soc-alert-triage.md", desc: "My SOC review structure: alert context, evidence, severity thinking, process checks, timeline, and closing notes." },
       { title: "Tools Cheatsheet", folder: "tools", type: "Markdown", status: "Completed", date: "2026", icon: "🧰", url: "assets/writeups/tools-cheatsheet.md", desc: "Quick commands for Nmap, web testing, WordPress, SMB, FTP, John, Linux, Windows, Burp, and documentation." },
       { title: "Windows Process Baseline for Memory Analysis", folder: "notes", type: "Article", status: "Completed", date: "2026", icon: "🧬", url: "assets/writeups/windows-process-baseline.md", desc: "A practical Windows process baseline for memory analysis, parent-child relationships, path checking, and masquerading awareness." },
       { title: "Personal Growth in Cybersecurity", folder: "notes", type: "Article", status: "Completed", date: "2026", icon: "✨", url: "assets/writeups/personal-growth-cybersecurity.md", desc: "My reflections on certificates, labs, SOC, pentesting, write-ups, GitHub, and long-term cybersecurity growth." },
-      { title: "Secure Web Application Case Study", folder: "cybersecurity", type: "Notebook", status: "Completed", date: "2026", icon: "🔒", url: "assets/writeups/secure-web-app-case-study.md", desc: "A professional case study for the secure travel website project: risk areas, controls, testing mindset, and lessons learned." },
+      { title: "Secure Web Application Case Study", folder: "cybersecurity", type: "Notebook", status: "Completed", date: "2026", icon: "🔒", url: "assets/writeups/secure-web-app-case-study.md", desc: "A professional case study for the Afwaj web application security assessment: risk areas, controls, testing mindset, and lessons learned." },
       { title: "Phishing URL Detection Project Notes", folder: "cybersecurity", type: "Notebook", status: "Completed", date: "2026", icon: "🧠", url: "assets/writeups/phishing-url-detection-project.md", desc: "Project notes for the phishing URL detection system: features, model idea, security value, limitations, and future work." },
       { title: "Zero Trust Architecture Notes", folder: "cybersecurity", type: "Notebook", status: "Completed", date: "2026", icon: "🏗️", url: "assets/writeups/zero-trust-architecture-notes.md", desc: "Architecture notes for the Zero Trust simulation: segmentation, access control, monitoring, and network design thinking." },
       { title: "Personal Tools Index", folder: "tools", type: "Notebook", status: "Completed", date: "2026", icon: "⌘", url: "assets/writeups/personal-tools-index.md", desc: "A cleaner tool index organized by phase: recon, web, SMB, credentials, post-exploitation, SOC, and reporting." },
@@ -294,9 +304,9 @@ const portfolioData = {
 
   reports: [
     {
-      title: "SMAP Files Repository Vulnerability Report",
-      type: "Critical Vulnerability Research",
-      desc: "A formal vulnerability research report on SMAP Online Files Repository covering broken access control, IDOR-style object access risk, predictable PDF exposure, direct retrieval evidence, impact, and remediation recommendations.",
+      title: "Redacted UTHM Student Platform Security Assessment Report",
+      type: "Authorized Web Security Assessment",
+      desc: "A redacted security assessment report covering broken access control, IDOR-style object access risk, direct file access concerns, impact, and remediation recommendations for secure platform improvement.",
       link: "assets/reports/Vulnerability_Report_SMAP_Ahmed_Gubran.pdf"
     }
   ],
@@ -373,9 +383,9 @@ const portfolioData = {
     },
     {
       topic: "Ahmed certifications",
-      keywords: ["cert", "certificate", "certification", "credential", "security+", "ejpt", "ccna", "hcia", "microsoft", "pl-900", "ai-900", "power platform", "azure ai", "شهادات"],
-      answer: "Ahmed’s credentials include eJPT, CompTIA Security+, HCIA-Security Certification, HCIA-Security V4.0 Course, CCNAv7: Introduction to Networks, Microsoft Power Platform Fundamentals, and Microsoft Azure AI Fundamentals. The portfolio also includes Dean’s Awards, PETRONAS CTF participation, BRIDG3 Hackathon participation, and Brawijaya academic mobility results.",
-      answerAr: "شهادات أحمد تشمل eJPT وCompTIA Security+ وHCIA-Security وHCIA-Security V4.0 Course وCCNAv7 Introduction to Networks وMicrosoft Power Platform Fundamentals وMicrosoft Azure AI Fundamentals. كما توجد جوائز العميد ومشاركة PETRONAS CTF وBRIDG3 Hackathon ونتيجة Brawijaya."
+      keywords: ["cert", "certificate", "certification", "credential", "ewptx", "security+", "ejpt", "ccna", "hcia", "microsoft", "pl-900", "ai-900", "power platform", "azure ai", "شهادات"],
+      answer: "Ahmed’s credentials include eWPTX, eJPTv2, CompTIA Security+, HCIA-Security, CCNAv7: Introduction to Networks, Microsoft Power Platform Fundamentals, and Microsoft Azure AI Fundamentals. The portfolio also includes Dean’s Awards, PETRONAS CTF participation, BRIDG3 Hackathon participation, and Brawijaya academic mobility results.",
+      answerAr: "شهادات أحمد تشمل eWPTX وeJPTv2 وCompTIA Security+ وHCIA-Security وCCNAv7 Introduction to Networks وMicrosoft Power Platform Fundamentals وMicrosoft Azure AI Fundamentals. كما توجد جوائز العميد ومشاركة PETRONAS CTF وBRIDG3 Hackathon ونتيجة Brawijaya."
     },
     {
       topic: "Ahmed social profiles and TryHackMe",
@@ -410,8 +420,8 @@ const portfolioData = {
     {
       topic: "Ahmed SMAP report",
       keywords: ["smap", "report", "vulnerability report", "uthm portal", "repository", "pdf exposure", "restricted", "access control", "idor report", "تقرير"],
-      answer: "Ahmed’s SMAP report is an vulnerability research report about repository-wide broken access control and predictable PDF exposure in the UTHM SMAP Online Files Repository. The key issue is that restricted or hidden files should not rely on UI restriction only; the backend must verify authorization and ownership before serving any document. The portfolio links to the SMAP report as the main evidence document.",
-      answerAr: "تقرير SMAP الخاص بأحمد يوثق Broken Access Control وPredictable PDF Exposure في UTHM SMAP Online Files Repository. الفكرة الأساسية أن إخفاء الملف من الواجهة لا يكفي؛ لازم الباكند يتحقق من الصلاحية والملكية قبل إرسال أي مستند. البورتفوليو يعرض التقرير كوثيقة الدليل الرئيسية."
+      answer: "Ahmed’s redacted UTHM student platform security assessment documents broken access control and direct file access concerns. The key issue is that restricted or hidden files should not rely on UI restriction only; the backend must verify authorization and ownership before serving any document. The portfolio links to a redacted report for responsible documentation.",
+      answerAr: "تقرير أحمد المنقح لتقييم منصة طلابية في UTHM يوثق Broken Access Control ومخاطر الوصول المباشر للملفات. الفكرة الأساسية أن إخفاء الملف من الواجهة لا يكفي؛ لازم الباكند يتحقق من الصلاحية والملكية قبل إرسال أي مستند. البورتفوليو يعرض تقريراً منقحاً للتوثيق المسؤول."
     },
     {
       topic: "Ahmed experience",
@@ -421,8 +431,8 @@ const portfolioData = {
     }
   ],
 
-  cyberFallback: "I’m CyberBot. I can answer cybersecurity questions and Ahmed-specific questions. Try asking about IDOR, OWASP Top 10, SQL injection, XSS, CSRF, SSRF, Nmap, Burp Suite, SIEM, SOC triage, malware, phishing, incident response, Windows process baseline, Kali troubleshooting, eJPT, Security+, Ahmed’s CGPA, awards, certifications, projects, GitHub, X/Twitter, Medium, TryHackMe, professional pentest/SOC tools, or the SMAP report. I keep answers ethical, defensive, and scoped to authorized learning.",
-  cyberFallbackAr: "أنا CyberBot. أقدر أجاوب عن أسئلة سايبر وأسئلة عن أحمد. جرّب تسأل عن IDOR، OWASP Top 10، SQL Injection، XSS، CSRF، SSRF، Nmap، Burp Suite، SIEM، SOC triage، Malware، Phishing، Incident Response، Windows process baseline، مشاكل Kali، eJPT، Security+، معدل أحمد، الجوائز، الشهادات، المشاريع، GitHub، X/Twitter، Medium، TryHackMe، أدوات Pentest/SOC الاحترافية، أو تقرير SMAP. الإجابات تكون أخلاقية ودفاعية وفي نطاق التعلم المصرح.",
+  cyberFallback: "I’m CyberBot. I can answer cybersecurity questions and Ahmed-specific questions. Try asking about IDOR, OWASP Top 10, SQL injection, XSS, CSRF, SSRF, Nmap, Burp Suite, SIEM, SOC triage, malware, phishing, incident response, Windows process baseline, Kali troubleshooting, eJPT, Security+, Ahmed’s CGPA, awards, certifications, projects, GitHub, X/Twitter, Medium, TryHackMe, professional pentest/SOC tools, or the redacted UTHM security assessment report. I keep answers ethical, defensive, and scoped to authorized learning.",
+  cyberFallbackAr: "أنا CyberBot. أقدر أجاوب عن أسئلة سايبر وأسئلة عن أحمد. جرّب تسأل عن IDOR، OWASP Top 10، SQL Injection، XSS، CSRF، SSRF، Nmap، Burp Suite، SIEM، SOC triage، Malware، Phishing، Incident Response، Windows process baseline، مشاكل Kali، eJPT، Security+، معدل أحمد، الجوائز، الشهادات، المشاريع، GitHub، X/Twitter، Medium، TryHackMe، أدوات Pentest/SOC الاحترافية، أو تقرير UTHM الأمني المنقح. الإجابات تكون أخلاقية ودفاعية وفي نطاق التعلم المصرح.",
 
   cyberKnowledgeBase: [
     {
@@ -539,7 +549,7 @@ const portfolioData = {
   extraCyberKnowledge: [
     { topic: "eJPT exam strategy", keywords: ["ejpt", "ine", "junior penetration tester", "exam", "pivoting", "routing"], answer: "For eJPT-style practice, I think in phases: identify my IP and subnet, discover hosts, enumerate every service, exploit only after evidence, upgrade access, collect proof, check routes, pivot carefully, enumerate internal hosts, and document everything. The important part is not memorizing commands; it is proving each step before moving on. I keep Nmap, enum4linux/smbclient, WPScan, Hydra, John, Metasploit, curl, and notes open during practice.", answerAr: "في eJPT-style practice أمشي بمراحل: أحدد IP والشبكة، أكتشف الأجهزة، أعمل Enumeration لكل خدمة، لا أستغل إلا بعد دليل، أرفع الصلاحيات، أجمع الأدلة، أفحص الراوت، أعمل Pivot بحذر، أفحص الشبكة الداخلية، وأوثق كل شيء. المهم ليس حفظ الأوامر فقط، بل إثبات كل خطوة قبل الانتقال للخطوة التالية." },
     { topic: "Security+ exam strategy", keywords: ["security+", "comptia", "sy0-701", "exam tips", "pbq"], answer: "For Security+, I focus on scenario thinking: what is the risk, which control reduces it, and what should be done first or best? I revise IAM, risk, cryptography basics, network controls, cloud, incident response, logging, governance, and business continuity. For PBQs, I slow down, identify the zones, users, protocols, direction of traffic, and least-privilege requirement before choosing controls.", answerAr: "في Security+ أركز على التفكير بالسيناريو: ما الخطر؟ ما التحكم المناسب؟ ما الخطوة الأولى أو الأفضل؟ أراجع IAM، المخاطر، أساسيات التشفير، حماية الشبكات، الكلاود، الاستجابة للحوادث، اللوقات، الحوكمة، والاستمرارية. في PBQ أهدأ وأحدد الشبكات، المستخدمين، البروتوكولات، اتجاه الترافيك، وأقل صلاحيات." },
-    { topic: "SMAP vulnerability report", keywords: ["smap", "uthm", "report", "idor", "repository", "pdf exposure", "predictable filename"], answer: "Ahmed’s SMAP report documents a critical repository access-control issue involving predictable PDF references and direct file delivery. The security lesson is clear: hiding a file in the UI is not authorization. The backend must verify ownership on every file request, use opaque random identifiers, protect file streaming through application logic, invalidate exposed links, log access, rate limit requests, and retest after remediation.", answerAr: "تقرير SMAP يوثق مشكلة حرجة في التحكم بالوصول داخل مستودع الملفات، مع أسماء PDF قابلة للتوقع وتسليم مباشر للملفات. الدرس الأمني: إخفاء الملف في الواجهة ليس Authorization. لازم الباكند يتحقق من ملكية كل ملف، يستخدم معرفات عشوائية، يخدم الملفات عبر endpoint محمي، يلغي الروابط المكشوفة، يسجل الوصول، يطبق rate limiting، ويعيد الاختبار بعد الإصلاح." },
+    { topic: "SMAP vulnerability report", keywords: ["smap", "uthm", "report", "idor", "repository", "pdf exposure", "predictable filename"], answer: "Ahmed’s redacted UTHM student platform assessment documents an access-control issue involving direct file delivery concerns. The security lesson is clear: hiding a file in the UI is not authorization. The backend must verify ownership on every file request, use opaque random identifiers, protect file streaming through application logic, invalidate exposed links, log access, rate limit requests, and retest after remediation.", answerAr: "تقرير UTHM المنقح يوثق مشكلة في التحكم بالوصول داخل منصة طلابية، مع مخاطر وصول مباشر للملفات. الدرس الأمني: إخفاء الملف في الواجهة ليس Authorization. لازم الباكند يتحقق من ملكية كل ملف، يستخدم معرفات عشوائية، يخدم الملفات عبر endpoint محمي، يلغي الروابط المكشوفة، يسجل الوصول، يطبق rate limiting، ويعيد الاختبار بعد الإصلاح." },
     { topic: "Ahmed academic results", keywords: ["cgpa", "gpa", "dean", "brawijaya", "grade", "result", "معدل"], answer: "Ahmed’s UTHM CGPA is 3.55/4.00. His Brawijaya academic mobility result shows GPA/cGPA 4.00/4.00. His Dean’s Award records shown in the portfolio include GPA 3.80, 3.68, and 3.91 across different semesters.", answerAr: "معدل أحمد في UTHM هو 3.55/4.00. ونتيجة Brawijaya في برنامج التبادل الأكاديمي GPA/cGPA هي 4.00/4.00. جوائز العميد المعروضة في البورتفوليو تتضمن GPA 3.80 و3.68 و3.91 في فصول مختلفة." },
     { topic: "Web testing workflow", keywords: ["web pentest", "web methodology", "owasp", "authentication", "access control", "file upload"], answer: "My web testing workflow is: map the application, identify roles, test authentication, test authorization and object access, inspect input points, review upload/download features, check session behavior, compare responses, document evidence, and write remediation. I focus heavily on broken access control because it is often more dangerous than a visible error message.", answerAr: "منهجيتي في Web Testing: أفهم التطبيق، أحدد الأدوار، أختبر تسجيل الدخول، أختبر الصلاحيات والوصول للكائنات، أفحص نقاط الإدخال، أراجع الرفع والتحميل، أفحص الجلسات، أقارن الاستجابات، أوثق الدليل، وأكتب علاج واضح. أركز جداً على Broken Access Control لأنها غالباً أخطر من رسالة خطأ ظاهرة." },
     { topic: "Responsible portfolio note", keywords: ["public", "redaction", "safe portfolio", "qr", "certificate id", "privacy"], answer: "Before publishing any public portfolio, I review certificates and reports for QR codes, candidate IDs, passport numbers, private URLs, tokens, screenshots with sensitive data, and internal-only evidence. A professional portfolio shows proof of work without leaking private information.", answerAr: "قبل نشر أي Portfolio عام، أراجع الشهادات والتقارير للتأكد من عدم وجود QR حساس، أرقام تحقق، رقم جواز، روابط خاصة، Tokens، صور فيها بيانات حساسة، أو أدلة داخلية. البورتفوليو الاحترافي يثبت الشغل بدون تسريب معلومات خاصة." }
@@ -555,8 +565,8 @@ const portfolioData = {
         "#mainMenu a:nth-child(5)": "Write-ups",
         "#mainMenu a:nth-child(6)": "Awards",
         "#mainMenu a:nth-child(7)": "Contact",
-        "#profileTitle": "Cybersecurity Graduate | SOC Analyst | Penetration Testing & SIEM Operations",
-        "#profileSubtitle": "Cybersecurity graduate with practical exposure to SOC monitoring, alert triage, incident investigation, vulnerability assessment, secure web practices, and penetration-testing fundamentals.",
+        "#profileTitle": "Cybersecurity Analyst | SOC Analyst | Junior Penetration Tester | Web Application Security",
+        "#profileSubtitle": "Cybersecurity professional with hands-on experience in SOC operations, SIEM monitoring, threat detection, vulnerability assessment, web application security auditing, and authorized penetration testing practice.",
         "#about .section-title h2": "About Ahmed",
         "#terminal .section-title h2": "Linux-style Navigation Terminal",
         "#skills .section-title h2": "Security Skills",
@@ -582,10 +592,10 @@ const portfolioData = {
         "#mainMenu a:nth-child(5)": "المقالات",
         "#mainMenu a:nth-child(6)": "الإنجازات",
         "#mainMenu a:nth-child(7)": "التواصل",
-        "#profileTitle": "خريج أمن معلومات | محلل SOC | اختبار اختراق وعمليات SIEM",
-        "#profileSubtitle": "خريج أمن سيبراني لديه خبرة عملية في مراقبة التنبيهات، تحليل السجلات، دعم الاستجابة للحوادث، تقييم الثغرات، ممارسات الويب الآمنة، وأساسيات اختبار الاختراق.",
+        "#profileTitle": "محلل أمن سيبراني | محلل SOC | اختبار اختراق مبتدئ | أمن تطبيقات الويب",
+        "#profileSubtitle": "محترف أمن سيبراني لديه خبرة عملية في عمليات SOC، مراقبة SIEM، كشف التهديدات، تقييم الثغرات، تدقيق أمن تطبيقات الويب، وممارسة اختبار الاختراق المصرح.",
         "#about .section-title h2": "نبذة عن أحمد",
-        "#aboutText": "أحمد خريج أمن سيبراني من UTHM، يجمع بين خبرة دفاعية في SOC والتعلم العملي في اختبار الاختراق، أمن الويب، تقييم الثغرات، CTF، والمشاريع الأمنية. معدل UTHM هو 3.55/4.00، ونتيجة Brawijaya GPA/cGPA 4.00، ولديه عدة جوائز عميد.",
+        "#aboutText": "أحمد محترف أمن سيبراني من UTHM، يجمع بين SOC، SIEM، التحقيق في الحوادث، تقييم الثغرات، أمن تطبيقات الويب، التقارير الأمنية، وممارسة اختبار الاختراق المصرح. معدل UTHM هو 3.55/4.00، ونتيجة Brawijaya GPA/cGPA 4.00، ولديه عدة جوائز عميد.",
         "#terminal .section-title h2": "ترمينال تنقل بأسلوب لينكس",
         "#terminal .section-title p": "استخدم أوامر بسيطة للتنقل داخل الموقع. جرّب: help, ls, whoami, cat certs.txt, open projects, cgpa, cat report.txt.",
         "#skills .section-title h2": "المهارات الأمنية",
