@@ -50,18 +50,18 @@ const portfolioData = {
 
   experience: [
     {
-      role: "SOC Analyst Intern",
-      company: "University SOC, Universiti Tun Hussein Onn Malaysia (UTHM)",
-      period: "May 2025 - Jul 2025",
-      desc: "Supported SOC operations by monitoring and reviewing alerts, analyzing logs and security events, identifying suspicious activity, assessing alert severity, and supporting investigation and escalation workflows.",
-      tags: ["SOC", "SIEM", "Alert Triage", "Incident Handling"]
+      role: "Cybersecurity Consultant & Web Application Security Auditor",
+      company: "Afwaj Al Haramain Travel & Tours, Cyberjaya, Malaysia",
+      period: "Jan 2026 - Jun 2026",
+      desc: "Conducted web application security assessment, vulnerability assessment, and threat modeling for the company's business platform. Reviewed security controls related to client database architecture, secure payment gateway integration, discount management workflows, access control, input validation, and secure coding practices. Prepared and presented a security assessment report with prioritized findings, business impact, and remediation recommendations.",
+      tags: ["Web Security", "Vulnerability Assessment", "Threat Modeling", "Access Control", "Secure Coding", "Security Reporting"]
     },
     {
-      role: "Cybersecurity & IT Intern / IT Support",
-      company: "Afwaj Al Haramain, Cyberjaya",
+      role: "Cybersecurity Intern - SOC Team",
+      company: "Cybertronium, Kuala Lumpur, Malaysia",
       period: "Aug 2025 - Jan 2026",
-      desc: "Supported cybersecurity and IT operations, system reliability, user access, and secure web practices. Contributed to reducing SQL injection risk using parameterized queries and strengthening authorization checks for IDOR-related access control issues.",
-      tags: ["Web Security", "Access Control", "Secure Coding", "IT Support"]
+      desc: "Worked within the Security Operations Center (SOC) team to monitor, analyze, and investigate enterprise security events and alerts. Performed real-time log analysis, SIEM monitoring, alert triage, incident investigation, and escalation using Splunk and Microsoft Sentinel. Monitored endpoint security events using CrowdStrike and Microsoft Defender while supporting SOC operations, incident response workflows, and security documentation.",
+      tags: ["SOC", "SIEM", "Log Analysis", "Alert Triage", "Incident Investigation", "Threat Detection", "Splunk", "Microsoft Sentinel", "CrowdStrike"]
     }
   ],
 
